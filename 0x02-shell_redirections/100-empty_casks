@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d,f -size 0 | cut -f 6 | ls -al
+find . -empty -printf "%f\n"
